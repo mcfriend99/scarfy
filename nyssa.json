@@ -1,15 +1,11 @@
 {
-  "name": "ray", 
+  "name": "scarfy", 
   "version": "1.0.0", 
-  "description": "Simple game and forms widget library for Blade based on Raylib.", 
-  "homepage": "", 
+  "description": "A simple game based on the Raylib demos", 
+  "homepage": "https://github.com/mcfriend99/scarfy", 
   "tags": [
     "game", 
-    "gui", 
-    "desktop", 
-    "engine", 
-    "widgets", 
-    "controls"
+    "gui"
   ], 
   "author": "Richard Ore <eqliqandfriends@gmail.com>", 
   "license": "ISC", 

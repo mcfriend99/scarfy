@@ -1,0 +1,18 @@
+# blade packages directory and files
+.blade/
+*.nyp
+
+# popular editors
+.vscode/
+.idea/
+.vs/
+
+# c object files (for C extensions)
+*.o
+*.ko
+*.elf
+
+# log files
+*.log
+.DS_Store
+*/**/.DS_Store

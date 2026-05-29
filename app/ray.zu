@@ -809,9 +809,10 @@ def Init(debug) {
     when 'linux' {
       if _machine_type.starts_with('arm') or _machine_type.starts_with('aarch') {
         error = 'ARM and AARCH environments not supported by this application.'
-      } else if !_machine_type.contains('64') {
+      } else if _machine_type.index_of('64') == -1 {
         error = '64-bit machine required to run application.'
       }
+      _bin_path += '.so'
     }
     when 'windows' {
       if _machine_type.starts_with('arm') or !_machine_type.match('64') {
@@ -822,7 +823,7 @@ def Init(debug) {
       var curr_env = os.get_env('PATH')
       curr_env += os.join_paths(os.dir_name(os.dir_name(__file__)), 'bin') + ';'
       os.set_env('PATH', curr_env)
-      _bin_path = 'libraylib.dll'
+      _bin_path += '.dll'
     }
   }
 

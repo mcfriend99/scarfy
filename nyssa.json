@@ -10,7 +10,7 @@
   "author": "Richard Ore <eqliqandfriends@gmail.com>", 
   "license": "ISC", 
   "sources": [
-    "https://nyssa.bladelang.com"
+    "https://nyssa.zurilang.com"
   ], 
   "deps": {}
 }
